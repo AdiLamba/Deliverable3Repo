@@ -7,7 +7,7 @@ public class ComputerPlayer extends AbstractPlayer {
 
     @Override
     public void takeTurn() {
-        while (true) {
+        while (!hand.isEmpty()) {
             Card requestedCard = hand.get(random.nextInt(hand.size()));
             System.out.println("The AI requests a " + requestedCard);
 
